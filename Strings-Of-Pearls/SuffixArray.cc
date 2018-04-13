@@ -42,8 +42,8 @@ void suffixArrayCPP(string c, vector<string> a)
     }
 
     sort(a.begin(), a.end());
-//    for(int i = 0; i < a.size(); i++)
-//        cout << a[i] << "\n";
+    for(int i = 0; i < a.size(); i++)
+        cout << a[i] << "\n";
 
 
     int maxlen = -1;
@@ -58,6 +58,7 @@ void suffixArrayCPP(string c, vector<string> a)
     }
 
     cout << a[maxi].substr(0, maxlen) << "\n";
+    //cout << a[maxi] << "\n";
 }
 
 int main()
